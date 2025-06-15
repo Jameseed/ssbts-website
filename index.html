@@ -3,55 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seven Steps Business Transformation Systems</title>
+    <title>Seven Steps Business Transformation Systems - Daily Management Excellence</title>
     <meta name="description" content="Seven Steps Business Transformation Systems (SSBTS) delivers Lean, Six Sigma, TPM, and Industry 4.0 solutions, embedding continuous improvement habits across global organizations.">
+    <meta name="keywords" content="Daily Management, Lean Manufacturing, Six Sigma, TPM, Business Excellence, Operational Excellence, Hoshin Kanri, PDCA, Kaizen">
+    <meta name="author" content="Seven Steps Business Transformation Systems">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Seven Steps Business Transformation Systems - Daily Management Excellence">
+    <meta property="og:description" content="Demystifying the Elephant Called Daily Management - Building systems that ensure jobs get done efficiently, every single day.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dailymanagement.in">
+    <meta property="og:image" content="logo-new.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Seven Steps Business Transformation Systems">
+    <meta name="twitter:description" content="Daily Management Systems that deliver predictable performance and continuous improvement.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo-new.png">
+    
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <img src="logo-new.png" alt="Seven Steps" class="loading-logo">
+            <div class="loading-spinner"></div>
+            <p>Loading Excellence...</p>
+        </div>
+    </div>
+
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-top">
             <div class="container">
-                <div class="contact-info">
-                    <i class="fas fa-phone"></i>
-                    <span>Call: +91 98863 18437</span>
+                <div class="header-top-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98863 18437</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@dailymanagement.in</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <div class="header-main">
             <div class="container">
                 <div class="header-content">
                     <div class="logo">
-                        <img src="logo.png" alt="Seven Steps Business Transformation Systems">
+                        <img src="logo-new.png" alt="Seven Steps Business Transformation Systems" class="logo-img">
                     </div>
-                    <nav class="main-navigation">
-                        <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
+                    
+                    <nav class="main-navigation" id="main-nav">
+                        <ul class="nav-menu">
+                            <li><a href="#home" class="nav-link active">Home</a></li>
+                            <li><a href="#about" class="nav-link">About Us</a></li>
                             <li class="dropdown">
-                                <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                                <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="operational-excellence.html">Operational Excellence</a></li>
-                                    <li><a href="business-excellence.html">Business Excellence</a></li>
-                                    <li><a href="production-system.html">Production System</a></li>
-                                    <li><a href="lean-consulting.html">Lean Consulting</a></li>
+                                    <li><a href="#operational-excellence">Operational Excellence</a></li>
+                                    <li><a href="#business-excellence">Business Excellence</a></li>
+                                    <li><a href="#production-system">Production System</a></li>
+                                    <li><a href="#lean-consulting">Lean Consulting</a></li>
                                 </ul>
                             </li>
-                            <li><a href="solutions.html">Solutions</a></li>
-                            <li><a href="why-seven-steps.html">Why Seven Steps</a></li>
-                            <li><a href="books.html">Books We Recommend</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="case-studies.html">Case Studies</a></li>
+                            <li><a href="#solutions" class="nav-link">Solutions</a></li>
+                            <li><a href="#methodology" class="nav-link">Methodology</a></li>
+                            <li><a href="#clients" class="nav-link">Our Clients</a></li>
+                            <li><a href="#contact" class="nav-link">Contact</a></li>
                         </ul>
-                        <div class="mobile-menu-toggle">
+                        
+                        <div class="mobile-menu-toggle" id="mobile-toggle">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -64,209 +114,510 @@
 
     <main>
         <!-- Hero Section -->
-
-<section class="hero-section single" style="background-image: url('hero-bg-1.jpg');">
-    <div class="container">
-        <div class="hero-content">
-            <h1>Demystifying the Elephant Called Daily Management</h1>
-            <p>“We are what we repeatedly do. Excellence then, is not an act but a habit” – Aristotle</p>
-        </div>
-    </div>
-</section>
-
-<section class="intro-dms">
-    <div class="container">
-        <p>“Daily Management is not the job itself — it’s the system that ensures the job gets done efficiently, every single day.”</p>
-        <p>At <a href="https://www.dailymanagement.in">www.dailymanagement.in</a>, we help you make sense of the often misunderstood and underutilized powerhouse behind operational excellence — Daily Management Systems (DMS).</p>
-        <p>Despite its importance, many organizations struggle to define, implement, or sustain Daily Management. To some, it feels like firefighting. To others, it’s a checklist. In reality, it’s a structured system that aligns people, processes, metrics, and leadership actions — from frontline to CEO — to deliver stable, predictable performance with continuous improvement.</p>
-    </div>
-</section>
-
-<section class="questions-section">
-    <div class="container">
-        <h2>Is Your Function Aligned for Daily Excellence?</h2>
-        <p>Ask yourself — and your team — these 7 critical questions to assess Daily Management readiness across any function:</p>
-        <ul>
-            <li>🎯 Are your team’s Mission, Goals, KPIs, and Processes clearly defined? Is there a clear linkage between your department’s goals and the organization’s vision, mission, and strategic direction?</li>
-            <li>👥 Is your Organizational Structure clear and supported? Are roles and responsibilities well-defined? Do you have the right people and infrastructure to deliver consistent performance?</li>
-            <li>📘 Do you have Standard Operating Procedures (SOPs) for all key processes? Are these SOPs used, understood, and followed to ensure efficiency and consistency?</li>
-            <li>🧭 Does every team member know their Job Description, Goals, KPIs — and how to respond to abnormal situations? Is there clarity at every level — not just on what to do, but also how and when to act?</li>
-            <li>📊 Are you tracking performance with the right frequency using Dashboards, Visual Boards, or SPC Charts? Do you review what matters, when it matters?</li>
-            <li>🚨 When performance deviates, do you have a response system in place? Are corrective and preventive actions clearly defined, owned, and followed through?</li>
-            <li>🔁 Are you actively pursuing Continuous Improvement? Is Kaizen part of your culture — or just a buzzword?</li>
-        </ul>
-        <p><strong>If the answer to any of the above is “No”, it’s time to act.</strong> Daily Management is not an option — it’s a system to run your business without surprises. Let us help you close the gap — with the systems, structures, and skills that bring daily control and long-term excellence.</p>
-    </div>
-</section>
-        <!-- Testimonials Section -->
-<section class="about-dms">
-    <div class="container">
-        <h2>About Us</h2>
-        <p>Daily Management Systems (DMS) — also known as Daily Work Management Systems (DWMS) — is a specialized service offering from Seven Steps Business Transformation Systems, designed to help organizations run their operations smoothly, consistently, and without surprises.</p>
-        <p>Our mission is to institutionalize excellence in daily execution by building systems that enable proactive control, structured reviews, problem-solving, and continuous improvement at every level. Whether you’re in manufacturing, services, education, or healthcare, our approach ensures that every team knows what to do, when to do it, and how to improve it.</p>
-        <p>With decades of cross-industry experience, our team of business transformation professionals brings deep expertise in:</p>
-        <ul>
-            <li>Daily Work Management (DWM) Implementation</li>
-            <li>Policy Deployment (Hoshin Kanri) &amp; Balanced Scorecard</li>
-            <li>Lean, TPM, TQM, Six Sigma &amp; Quality Management Systems</li>
-            <li>Business Process Improvement &amp; Operational Excellence</li>
-            <li>Environmental, Health &amp; Safety (EHS) Systems</li>
-        </ul>
-        <p>Our consulting and training frameworks are rooted in global standards like JSQC, ISO 9004, and the House of Lean. We use powerful tools such as:</p>
-        <ul>
-            <li>Managing &amp; Checking Points (MP/CP)</li>
-            <li>Leader Standard Work</li>
-            <li>Tiered Meetings &amp; Visual Management</li>
-            <li>PDCA / SDCA cycles</li>
-            <li>Problem Solving</li>
-            <li>Gemba Walks and Structured Review Mechanisms</li>
-        </ul>
-        <p>At Seven Steps, we believe Daily Management is not just a routine — it’s the discipline that builds a resilient, high-performance culture.</p>
-    </div>
-</section>
-
-<section class="services-dms">
-    <div class="container">
-        <h2>Our Services</h2>
-        <p>Build Operational Discipline. Drive Daily Excellence. Deliver Results</p>
-        <h3>1. DMS / DWMS Consulting &amp; Implementation</h3>
-        <p>We partner with organizations to design and deploy complete Daily Management Systems that deliver predictable performance, minimize firefighting, and foster ownership at every level.</p>
-        <h4>Key Elements:</h4>
-        <ul>
-            <li>System Design &amp; Rollout – Identifying Managing &amp; Checking Points (MP/CP)</li>
-            <li>Setting up Visual Control Systems (VCS)</li>
-            <li>Developing shift-wise Daily Review (Sunrise/Sunset) and Tiered Meeting structures</li>
-            <li>Creating Leader Standard Work (LSW) frameworks</li>
-            <li>Role clarity, KPI definition, and job-activity alignment</li>
-            <li>Policy Deployment Integration (Hoshin Kanri) – Align strategy with operations through cascading KPIs</li>
-            <li>Tiered Daily Meeting System Setup – escalation mechanisms and feedback loops</li>
-            <li>Digital Daily Management Solutions – dashboards, logs, mobile tools, ERP integration</li>
-            <li>Training &amp; Capability Building – workshops, coaching, problem solving</li>
-            <li>DMS Champion &amp; Facilitator Certification – structured tracks for internal leaders</li>
-        </ul>
-        <p><strong>Outcome:</strong> A comprehensive system that builds execution excellence from the shop floor to the boardroom.</p>
-        <h3>2. DMS Audit &amp; Maturity Assessment (Optional Service)</h3>
-        <p>We assess your existing Daily Management practices using industry-leading standards, Lean Daily Management, TQM frameworks.</p>
-        <ul>
-            <li>DMS maturity diagnosis</li>
-            <li>Audit of MP/CP clarity, visual management effectiveness, and daily review discipline</li>
-            <li>Benchmark vs. leading practices</li>
-            <li>Customized action plan with quick wins and transformation roadmap</li>
-        </ul>
-        <p><strong>Outcome:</strong> Clear direction to elevate your daily execution system.</p>
-    </div>
-</section>
-        <section class="testimonials-section">
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+                <video autoplay muted loop class="hero-video">
+                    <source src="hero-bg-1.jpg" type="video/mp4">
+                </video>
+            </div>
+            
             <div class="container">
-                <h2>What Our Clients Say</h2>
-                <div class="testimonial-carousel">
-                    <div class="testimonial-slide active">
-                        <p>"Seven Steps Business Transformation Systems helped us achieve significant cost reductions and efficiency gains. Their expertise in Lean methodologies is truly exceptional!"</p>
-                        <cite>- John Doe, CEO of Manufacturing Co.</cite>
-                    </div>
-                    <div class="testimonial-slide">
-                        <p>"The team at Seven Steps provided invaluable guidance in developing our business excellence framework. Their holistic approach led to sustainable improvements across our organization."</p>
-                        <cite>- Jane Smith, Operations Director at Healthcare Group</cite>
-                    </div>
-                    <div class="testimonial-slide">
-                        <p>"We saw a remarkable improvement in our production efficiency after implementing the company-specific production system designed by Seven Steps. Highly recommended!"</p>
-                        <cite>- David Lee, Plant Manager at Automotive Inc.</cite>
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="hero-title">
+                        Demystifying the Elephant Called 
+                        <span class="highlight">Daily Management</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        "We are what we repeatedly do. Excellence then, is not an act but a habit" – Aristotle
+                    </p>
+                    <p class="hero-description">
+                        Daily Management is not the job itself — it's the system that ensures the job gets done efficiently, every single day.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary btn-lg">Discover Our Approach</a>
+                        <a href="#contact" class="btn btn-outline btn-lg">Get Started Today</a>
                     </div>
                 </div>
-                <button class="testimonial-nav prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="testimonial-nav next"><i class="fas fa-chevron-right"></i></button>
+                
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="99">0</div>
+                        <div class="stat-label">Success Rate %</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
             </div>
         </section>
 
-        <!-- Latest News Section -->
-        <section class="latest-news-section">
+        <!-- Introduction Section -->
+        <section class="intro-section" data-aos="fade-up">
             <div class="container">
-                <h2>Latest News</h2>
-                <div class="news-grid">
-                    <div class="news-item card h-100 border-0 shadow-sm">
-                        <img class="card-img-top" src="news-image-1.jpg" alt="News Image 1">
-                        <div class="news-date">March 1, 2020</div>
-                        <h3>Seven Steps Academy of Excellence Presents Certified 5S Auditor</h3>
-                        <p>Training program @ Bangalore! 13th & 14th March 2020. 5S is traditionally looked as housekeeping technique. Very few organizations like Toyota used 5S beyond just housekeeping. If implemented with the right spirit, a true 5S eliminates most of the quality and delivery issues from the root and create a foundation for Business Excellence Journey.</p>
-                        <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <div class="news-item card h-100 border-0 shadow-sm">
-                        <img class="card-img-top" src="news-image-2.jpg" alt="News Image 2">
-                        <div class="news-date">August 11, 2019</div>
-                        <h3>Lean in Hospitals & Healthcare Services</h3>
-                        <p>Hospitals are a key part of the health care delivery system. They provide a variety of services ranging from outpatient treatment to admissions and rehabilitation. As a system, hospitals are an intricate network of processes. Starting from the reception to the admissions and discharge office, the entire work is a series of processes.</p>
-                        <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    <div class="news-item card h-100 border-0 shadow-sm">
-                        <img class="card-img-top" src="news-image-3.jpg" alt="News Image 3">
-                        <div class="news-date">August 10, 2019</div>
-                        <h3>How to create an effective Lean Daily Work Management System</h3>
-                        <p>With Lean Daily Work Management System at the core of its operations, an organization will be able to quickly identify deviation, start solving problems and make strategy deployment a success. This systematic approach ensures continuous improvement and operational excellence.</p>
-                        <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <p class="intro-highlight">
+                            At <a href="https://www.dailymanagement.in" class="link-highlight">www.dailymanagement.in</a>, 
+                            we help you make sense of the often misunderstood and underutilized powerhouse behind operational excellence — Daily Management Systems (DMS).
+                        </p>
+                        <p>
+                            Despite its importance, many organizations struggle to define, implement, or sustain Daily Management. 
+                            To some, it feels like firefighting. To others, it's a checklist. In reality, it's a structured system 
+                            that aligns people, processes, metrics, and leadership actions — from frontline to CEO — to deliver 
+                            stable, predictable performance with continuous improvement.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Gallery Section (Teaser) -->
-        <section class="gallery-teaser-section">
+        <!-- Assessment Questions Section -->
+        <section class="assessment-section" data-aos="fade-up">
             <div class="container">
-                <h2>Our Gallery</h2>
-                <div class="gallery-carousel">
-                    <div class="gallery-slide active">
-                        <img src="gallery-image-1.jpg" alt="Gallery Image 1">
-                        <div class="gallery-caption">Lean Manufacturing Workshop</div>
+                <div class="section-header text-center">
+                    <h2 class="section-title">Is Your Function Aligned for Daily Excellence?</h2>
+                    <p class="section-subtitle">
+                        Ask yourself — and your team — these 7 critical questions to assess Daily Management readiness across any function:
+                    </p>
+                </div>
+                
+                <div class="questions-grid">
+                    <div class="question-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="question-icon">🎯</div>
+                        <h3>Mission & Goals Clarity</h3>
+                        <p>Are your team's Mission, Goals, KPIs, and Processes clearly defined? Is there a clear linkage between your department's goals and the organization's vision, mission, and strategic direction?</p>
                     </div>
-                    <div class="gallery-slide">
-                        <img src="gallery-image-2.jpg" alt="Gallery Image 2">
-                        <div class="gallery-caption">Business Excellence Seminar</div>
+                    
+                    <div class="question-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="question-icon">👥</div>
+                        <h3>Organizational Structure</h3>
+                        <p>Is your Organizational Structure clear and supported? Are roles and responsibilities well-defined? Do you have the right people and infrastructure to deliver consistent performance?</p>
                     </div>
-                    <div class="gallery-slide">
-                        <img src="gallery-image-3.jpg" alt="Gallery Image 3">
-                        <div class="gallery-caption">On-site Process Optimization</div>
+                    
+                    <div class="question-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="question-icon">📘</div>
+                        <h3>Standard Operating Procedures</h3>
+                        <p>Do you have Standard Operating Procedures (SOPs) for all key processes? Are these SOPs used, understood, and followed to ensure efficiency and consistency?</p>
+                    </div>
+                    
+                    <div class="question-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="question-icon">🧭</div>
+                        <h3>Job Clarity & Response</h3>
+                        <p>Does every team member know their Job Description, Goals, KPIs — and how to respond to abnormal situations? Is there clarity at every level — not just on what to do, but also how and when to act?</p>
+                    </div>
+                    
+                    <div class="question-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="question-icon">📊</div>
+                        <h3>Performance Tracking</h3>
+                        <p>Are you tracking performance with the right frequency using Dashboards, Visual Boards, or SPC Charts? Do you review what matters, when it matters?</p>
+                    </div>
+                    
+                    <div class="question-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="question-icon">🚨</div>
+                        <h3>Response System</h3>
+                        <p>When performance deviates, do you have a response system in place? Are corrective and preventive actions clearly defined, owned, and followed through?</p>
+                    </div>
+                    
+                    <div class="question-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="question-icon">🔁</div>
+                        <h3>Continuous Improvement</h3>
+                        <p>Are you actively pursuing Continuous Improvement? Is Kaizen part of your culture — or just a buzzword?</p>
                     </div>
                 </div>
-                <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
-                <div class="text-center">
-                    <a href="gallery.html" class="btn btn-secondary">View Full Gallery</a>
+                
+                <div class="cta-box" data-aos="fade-up" data-aos-delay="800">
+                    <h3>If the answer to any of the above is "No", it's time to act.</h3>
+                    <p>Daily Management is not an option — it's a system to run your business without surprises. Let us help you close the gap — with the systems, structures, and skills that bring daily control and long-term excellence.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Start Your Transformation</a>
                 </div>
             </div>
         </section>
 
-        <!-- Clients Section -->
-        <section class="clients-section">
+        <!-- About Section -->
+        <section id="about" class="about-section" data-aos="fade-up">
             <div class="container">
-                <h2>Our Valued Clients</h2>
-                <div class="client-carousel">
-                    <div class="client-slide active">
-                        <img src="client-komet.png" alt="KOMET Logo">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <h2 class="section-title">About Us</h2>
+                            <p class="lead">
+                                Daily Management Systems (DMS) — also known as Daily Work Management Systems (DWMS) — is a specialized service offering from Seven Steps Business Transformation Systems, designed to help organizations run their operations smoothly, consistently, and without surprises.
+                            </p>
+                            <p>
+                                Our mission is to institutionalize excellence in daily execution by building systems that enable proactive control, structured reviews, problem-solving, and continuous improvement at every level. Whether you're in manufacturing, services, education, or healthcare, our approach ensures that every team knows what to do, when to do it, and how to improve it.
+                            </p>
+                            
+                            <div class="expertise-list">
+                                <h4>Our Expertise:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Daily Work Management (DWM) Implementation</li>
+                                    <li><i class="fas fa-check"></i> Policy Deployment (Hoshin Kanri) & Balanced Scorecard</li>
+                                    <li><i class="fas fa-check"></i> Lean, TPM, TQM, Six Sigma & Quality Management Systems</li>
+                                    <li><i class="fas fa-check"></i> Business Process Improvement & Operational Excellence</li>
+                                    <li><i class="fas fa-check"></i> Environmental, Health & Safety (EHS) Systems</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="client-slide">
-                        <img src="client-bosch.png" alt="Bosch Logo">
-                    </div>
-                    <div class="client-slide">
-                        <img src="client-tata.png" alt="Tata Logo">
-                    </div>
-                    <div class="client-slide">
-                        <img src="client-siemens.png" alt="Siemens Logo">
-                    </div>
-                    <div class="client-slide">
-                        <img src="client-ge.png" alt="GE Logo">
+                    
+                    <div class="col-lg-6">
+                        <div class="about-visual">
+                            <div class="tools-grid">
+                                <h4>Our Powerful Tools:</h4>
+                                <div class="tool-items">
+                                    <div class="tool-item">
+                                        <i class="fas fa-bullseye"></i>
+                                        <span>Managing & Checking Points (MP/CP)</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-user-tie"></i>
+                                        <span>Leader Standard Work</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Tiered Meetings & Visual Management</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-sync-alt"></i>
+                                        <span>PDCA / SDCA cycles</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-search"></i>
+                                        <span>Problem Solving</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-walking"></i>
+                                        <span>Gemba Walks and Structured Review Mechanisms</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="client-nav prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="client-nav next"><i class="fas fa-chevron-right"></i></button>
             </div>
         </section>
 
-        <!-- Call to Action Section -->
-        <section class="cta">
+        <!-- Services Section -->
+        <section id="services" class="services-section" data-aos="fade-up">
             <div class="container">
-                <div class="cta-content">
-                    <h2>Ready to Transform Your Business?</h2>
-                    <p>Contact us today to discuss how Seven Steps Business Transformation Systems can help you achieve your goals.</p>
-                    <a href="contact.html" class="btn btn-primary btn-large">Enquire Now</a>
+                <div class="section-header text-center">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Build Operational Discipline. Drive Daily Excellence. Deliver Results</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card main-service" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>DMS / DWMS Consulting & Implementation</h3>
+                        </div>
+                        <p class="service-description">
+                            We partner with organizations to design and deploy complete Daily Management Systems that deliver predictable performance, minimize firefighting, and foster ownership at every level.
+                        </p>
+                        
+                        <div class="service-features">
+                            <div class="feature-category">
+                                <h4>System Design & Rollout</h4>
+                                <ul>
+                                    <li>Identifying Managing & Checking Points (MP/CP)</li>
+                                    <li>Setting up Visual Control Systems (VCS)</li>
+                                    <li>Developing shift-wise Daily Review structures</li>
+                                    <li>Creating Leader Standard Work (LSW) frameworks</li>
+                                    <li>Role clarity, KPI definition, and job-activity alignment</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Policy Deployment Integration</h4>
+                                <ul>
+                                    <li>Align strategy with operations through cascading KPIs</li>
+                                    <li>Link SQCDP metrics with daily execution</li>
+                                    <li>Use PDCA and A3 thinking to embed breakthrough goals</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Digital Solutions</h4>
+                                <ul>
+                                    <li>Smart dashboards for MP/CP monitoring</li>
+                                    <li>Digital Daily Logs and Visual Boards</li>
+                                    <li>Mobile-ready KPI tracking tools</li>
+                                    <li>ERP integration for data-driven decision-making</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="feature-category">
+                                <h4>Training & Certification</h4>
+                                <ul>
+                                    <li>Practical workshops on MP/CP identification</li>
+                                    <li>Leader Standard Work Training</li>
+                                    <li>Visual Management and Gemba Walks coaching</li>
+                                    <li>DMS Champion & Facilitator Certification</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-outcome">
+                            <strong>Outcome:</strong> A comprehensive system that builds execution excellence from the shop floor to the boardroom.
+                        </div>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>DMS Audit & Maturity Assessment</h3>
+                        </div>
+                        <p class="service-description">
+                            We assess your existing Daily Management practices using industry-leading standards, Lean Daily Management, TQM frameworks.
+                        </p>
+                        
+                        <div class="service-features">
+                            <ul>
+                                <li>DMS maturity diagnosis</li>
+                                <li>Audit of MP/CP clarity and visual management effectiveness</li>
+                                <li>Daily review discipline assessment</li>
+                                <li>Benchmark vs. leading practices</li>
+                                <li>Customized action plan with quick wins</li>
+                                <li>Transformation roadmap development</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-outcome">
+                            <strong>Outcome:</strong> Clear direction to elevate your daily execution system.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section id="methodology" class="methodology-section" data-aos="fade-up">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Our Methodology</h2>
+                    <p class="section-subtitle">Proven frameworks rooted in global standards like JSQC, ISO 9004, and the House of Lean</p>
+                </div>
+                
+                <div class="methodology-grid">
+                    <div class="methodology-item" data-aos="fade-up" data-aos-delay="100">
+                        <img src="WhatsAppImage2025-06-15at21.33.24_c6e40361.jpg" alt="The two roles of Leaders" class="methodology-image">
+                        <h3>Leadership Roles</h3>
+                        <p>Understanding the dual roles of leaders in sustaining and improving operations through Nichijo-Kanri and Hoshin-Kanri approaches.</p>
+                    </div>
+                    
+                    <div class="methodology-item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="WhatsAppImage2025-06-15at21.33.23_f626e04c.jpg" alt="How to use DWM" class="methodology-image">
+                        <h3>Daily Work Management</h3>
+                        <p>Systematic approach to managing daily work through structured processes and clear accountability mechanisms.</p>
+                    </div>
+                    
+                    <div class="methodology-item" data-aos="fade-up" data-aos-delay="300">
+                        <img src="WhatsAppImage2025-06-15at21.33.23_de9c7dfa.jpg" alt="Daily Work Management System" class="methodology-image">
+                        <h3>DWM System Framework</h3>
+                        <p>Comprehensive system covering Safety, Productivity, Quality, Cost, Delivery, and Morale with proper function and responsibility alignment.</p>
+                    </div>
+                    
+                    <div class="methodology-item" data-aos="fade-up" data-aos-delay="400">
+                        <img src="WhatsAppImage2025-06-15at21.33.23_4e26a4c6.jpg" alt="PDCA & SDCA Cycle" class="methodology-image">
+                        <h3>PDCA & SDCA Cycles</h3>
+                        <p>Continuous improvement through Plan-Do-Check-Act cycles for improvement and Standardize-Do-Check-Act for maintenance.</p>
+                    </div>
+                    
+                    <div class="methodology-item" data-aos="fade-up" data-aos-delay="500">
+                        <img src="WhatsAppImage2025-06-15at21.33.22_ec3b06cb.jpg" alt="PDCA Implementation" class="methodology-image">
+                        <h3>PDCA Implementation</h3>
+                        <p>Detailed implementation of improvement activities with focus on vital few initiatives and standardization processes.</p>
+                    </div>
+                    
+                    <div class="methodology-item" data-aos="fade-up" data-aos-delay="600">
+                        <img src="WhatsAppImage2025-06-15at21.33.22_d6c9f66e.jpg" alt="Responsibility of Functions" class="methodology-image">
+                        <h3>Functional Responsibility</h3>
+                        <p>Clear delineation of responsibilities across management levels for breakthrough improvements, incremental improvements, and retention.</p>
+                    </div>
+                    
+                    <div class="methodology-item" data-aos="fade-up" data-aos-delay="700">
+                        <img src="WhatsAppImage2025-06-15at21.33.22_a385dceb.jpg" alt="Daily Management Challenges" class="methodology-image">
+                        <h3>Management Challenges</h3>
+                        <p>Understanding why daily management fails and how to address the underlying issues that are often not visible on the surface.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section with Sliding Animation -->
+        <section id="clients" class="clients-section" data-aos="fade-up">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Our Trusted Clients</h2>
+                    <p class="section-subtitle">Leading organizations across industries trust us for their transformation journey</p>
+                </div>
+                
+                <div class="clients-slider-container">
+                    <div class="clients-slider" id="clients-slider">
+                        <div class="client-slide">
+                            <img src="client-aditya.png" alt="Aditya Birla Group" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-airtel.png" alt="Airtel" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-komet.png" alt="Komet" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-mahindra.png" alt="Mahindra" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-novozymes.png" alt="Novozymes" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-omni.png" alt="Omni" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-renewsys.png" alt="Renewsys" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-rm.png" alt="RM" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-tata.png" alt="Tata" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-titan.png" alt="Titan" class="client-logo">
+                        </div>
+                        <!-- Duplicate slides for seamless loop -->
+                        <div class="client-slide">
+                            <img src="client-aditya.png" alt="Aditya Birla Group" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-airtel.png" alt="Airtel" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-komet.png" alt="Komet" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-mahindra.png" alt="Mahindra" class="client-logo">
+                        </div>
+                        <div class="client-slide">
+                            <img src="client-novozymes.png" alt="Novozymes" class="client-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Get Started Today</h2>
+                    <p class="section-subtitle">Ready to transform your daily management? Let's discuss your specific needs.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="contact-form-container">
+                            <form class="contact-form" id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">Full Name *</label>
+                                            <input type="text" id="name" name="name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email">Email Address *</label>
+                                            <input type="email" id="email" name="email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="company">Company Name</label>
+                                            <input type="text" id="company" name="company">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone">Phone Number</label>
+                                            <input type="tel" id="phone" name="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="service">Service Interest</label>
+                                    <select id="service" name="service">
+                                        <option value="">Select a service</option>
+                                        <option value="dms-implementation">DMS/DWMS Implementation</option>
+                                        <option value="dms-audit">DMS Audit & Assessment</option>
+                                        <option value="training">Training & Certification</option>
+                                        <option value="consultation">General Consultation</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your current challenges and how we can help..."></textarea>
+                                </div>
+                                
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <span class="btn-text">Send Message</span>
+                                        <span class="btn-loading" style="display: none;">
+                                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-grid">
+                    <div class="contact-info-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Call Us</h4>
+                        <p>+91 98863 18437</p>
+                    </div>
+                    
+                    <div class="contact-info-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Us</h4>
+                        <p>info@dailymanagement.in</p>
+                    </div>
+                    
+                    <div class="contact-info-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Visit Website</h4>
+                        <p>www.dailymanagement.in</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -274,55 +625,77 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-main">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <div class="quote-section">
-                            <div class="aristotle-image">
-                                <img src="aristotle.png" alt="Aristotle">
-                            </div>
-                            <div class="quote-content">
-                                <blockquote>
-                                    "We Are What We Repeatedly Do. Excellence Then, Is Not An Act, But A Habit."
-                                </blockquote>
-                                <cite>Aristotle (384-322 BC)</cite>
-                                <p>Today the above quote from Aristotle is very relevant for Business Excellence journey. Less than 2 % of organizations sustain the journey after 5 years. This is mainly because of Not making excellence as a culture in the organization. Tools can be learnt but culture has to be created with focus and perseverance. Culture can be called soft part of Business Excellence.</p>
-                                <p>Strategies like TQM, Lean and Six Sigma are hard part of Business Excellence. The secret of success is a combination of soft and hard parts.</p>
-                                <p>Combining them together will make the journey not only sustainable but also enjoyable.</p>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo-new.png" alt="Seven Steps" class="footer-logo">
+                    <p>Making Excellence a Culture through Daily Management Systems that deliver predictable performance and continuous improvement.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
-                    <div class="footer-section">
-                        <div class="search-section">
-                            <div class="search-box">
-                                <input type="text" placeholder="Search" id="footer-search">
-                                <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
-                            </div>
-                        </div>
-                        <div class="quick-links">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li><a href="index.html"><i class="fas fa-check"></i> Home</a></li>
-                                <li><a href="about.html"><i class="fas fa-check"></i> About Us</a></li>
-                                <li><a href="services.html"><i class="fas fa-check"></i> Services</a></li>
-                                <li><a href="blog.html"><i class="fas fa-check"></i> Blog</a></li>
-                                <li><a href="case-studies.html"><i class="fas fa-check"></i> Case Studies</a></li>
-                                <li><a href="contact.html"><i class="fas fa-check"></i> Contact</a></li>
-                            </ul>
-                        </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">DMS Implementation</a></li>
+                        <li><a href="#services">DMS Audit</a></li>
+                        <li><a href="#services">Training & Certification</a></li>
+                        <li><a href="#services">Lean Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#methodology">Methodology</a></li>
+                        <li><a href="#clients">Our Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98863 18437</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@dailymanagement.in</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>www.dailymanagement.in</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2024 Seven Steps Business Transformation Systems. All Rights Reserved.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seven Steps Business Transformation Systems. All rights reserved.</p>
+                <div class="footer-tags">
+                    <span>#Hoshinkanri</span>
+                    <span>#Nichijokanri</span>
+                    <span>#Dailymanagement</span>
+                    <span>#Leanthinking</span>
+                    <span>#PDCA</span>
+                    <span>#Kaizen</span>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
