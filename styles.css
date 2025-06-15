@@ -313,10 +313,23 @@ body {
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 18px;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     z-index: 3;
+}
+
+.slider-nav::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    content: '\f053';
+}
+
+.slider-nav.next::before {
+    content: '\f054';
 }
 
 .slider-nav:hover {
@@ -1436,7 +1449,6 @@ section {
     .slider-nav {
         width: 40px;
         height: 40px;
-        font-size: 16px;
     }
     .slider-nav.prev {
         left: 15px;
