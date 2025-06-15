@@ -23,34 +23,33 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="logo-new.png">
     
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload critical fonts for performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
     
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
     
     <!-- External Libraries -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdgNsGaK3qQxU4y6b/bQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header" id="header">
+    <header class="header" id="header" role="banner">
         <!-- Header Top -->
         <div class="header-top">
             <div class="container">
                 <div class="contact-info">
-                    <span><i class="fas fa-phone"></i> +91 98863 18437</span>
-                    <span><i class="fas fa-envelope"></i> info@dailymanagement.in</span>
+                    <span><i class="fas fa-phone" aria-hidden="true"></i> +91 98863 18437</span>
+                    <span><i class="fas fa-envelope" aria-hidden="true"></i> info@dailymanagement.in</span>
                 </div>
                 <div class="social-links">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -58,9 +57,11 @@
         <!-- Header Main -->
         <div class="header-main">
             <div class="container">
-                <img src="logo-new.png" alt="Seven Steps Business Transformation Systems" class="logo">
+                <a href="index.html" aria-label="Seven Steps Business Transformation Systems Home">
+                    <img src="logo-new.png" alt="Seven Steps Business Transformation Systems Logo" class="logo">
+                </a>
                 
-                <nav>
+                <nav aria-label="Main Navigation">
                     <ul class="nav" id="nav">
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -71,8 +72,8 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     
-                    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-                        <i class="fas fa-bars"></i>
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="nav">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
                     </button>
                 </nav>
             </div>
@@ -80,76 +81,76 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main-content" id="main-content">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" aria-labelledby="hero-heading">
             <div class="container">
-                <h1>Demystifying the Elephant Called Daily Management</h1>
+                <h1 id="hero-heading">Demystifying the Elephant Called Daily Management</h1>
                 <p>Building systems that ensure jobs get done efficiently, every single day. Transform your organization with proven methodologies that deliver predictable performance and continuous improvement.</p>
                 <a href="contact.html" class="cta-button">Start Your Transformation</a>
             </div>
         </section>
 
         <!-- About Section -->
-        <section class="section">
+        <section class="section" aria-labelledby="about-heading">
             <div class="container">
                 <div class="section-title">
-                    <h2>About Seven Steps Business Transformation Systems</h2>
+                    <h2 id="about-heading">About Seven Steps Business Transformation Systems</h2>
                     <p>Daily Management Systems (DMS) — also known as Daily Work Management Systems (DWMS) — is a specialized service offering from Seven Steps Business Transformation Systems, designed to help organizations run their operations smoothly, consistently, and without surprises.</p>
                 </div>
                 
                 <div class="cards-grid">
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-target"></i>
+                            <i class="fas fa-target" aria-hidden="true"></i>
                         </div>
                         <h3>Mission & Vision Alignment</h3>
-                        <p>Are your team's Mission, Goals, KPIs, and Processes clearly defined? Is there a clear linkage between your department's goals and the organization's vision, mission, and strategic direction?</p>
+                        <p>Are your team\'s Mission, Goals, KPIs, and Processes clearly defined? Is there a clear linkage between your department\'s goals and the organization\'s vision, mission, and strategic direction?</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-sitemap"></i>
+                            <i class="fas fa-sitemap" aria-hidden="true"></i>
                         </div>
                         <h3>Organizational Structure</h3>
                         <p>Is your Organizational Structure clear and supported? Are roles and responsibilities well-defined? Do you have the right people and infrastructure to deliver consistent performance?</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-cogs"></i>
+                            <i class="fas fa-cogs" aria-hidden="true"></i>
                         </div>
                         <h3>Standard Operating Procedures</h3>
                         <p>Do you have Standard Operating Procedures (SOPs) for all key processes? Are these SOPs used, understood, and followed to ensure efficiency and consistency?</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-users" aria-hidden="true"></i>
                         </div>
                         <h3>Job Clarity & Response</h3>
                         <p>Does every team member know their Job Description, Goals, KPIs — and how to respond to abnormal situations? Is there clarity at every level — not just on what to do, but also how and when to act?</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
                         </div>
                         <h3>Performance Tracking</h3>
                         <p>Are you tracking performance with the right frequency using Dashboards, Visual Boards, or SPC Charts? Do you review what matters, when it matters?</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-exclamation-triangle"></i>
+                            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
                         </div>
                         <h3>Response System</h3>
                         <p>When performance deviates, do you have a response system in place? Are corrective and preventive actions clearly defined, owned, and followed through?</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-sync-alt"></i>
+                            <i class="fas fa-sync-alt" aria-hidden="true"></i>
                         </div>
                         <h3>Continuous Improvement</h3>
                         <p>Are you actively pursuing Continuous Improvement? Is Kaizen part of your culture? Do you have systems in place to capture, evaluate, and implement improvement ideas?</p>
@@ -159,58 +160,58 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="cta-section">
+        <section class="cta-section" aria-labelledby="cta-heading">
             <div class="container">
-                <h2>If the answer to any of the above is "No", it's time to act.</h2>
-                <p>Daily Management is not an option — it's a system to run your business without surprises. Let us help you close the gap — with the systems, structures, and skills that bring daily control and long-term excellence.</p>
+                <h2 id="cta-heading">If the answer to any of the above is "No", it\'s time to act.</h2>
+                <p>Daily Management is not an option — it\'s a system to run your business without surprises. Let us help you close the gap — with the systems, structures, and skills that bring daily control and long-term excellence.</p>
                 <a href="contact.html" class="cta-button">Start Your Transformation</a>
             </div>
         </section>
 
         <!-- Our Expertise Section -->
-        <section class="section">
+        <section class="section" aria-labelledby="expertise-heading">
             <div class="container">
                 <div class="section-title">
-                    <h2>Our Expertise</h2>
+                    <h2 id="expertise-heading">Our Expertise</h2>
                     <p>Our mission is to institutionalize excellence in daily execution by building systems that enable proactive control, structured reviews, problem-solving, and continuous improvement at every level.</p>
                 </div>
                 
                 <div class="cards-grid">
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-calendar-check"></i>
+                            <i class="fas fa-calendar-check" aria-hidden="true"></i>
                         </div>
                         <h3>Daily Work Management (DWM) Implementation</h3>
-                        <p>Comprehensive implementation of Daily Work Management systems tailored to your organization's needs.</p>
+                        <p>Comprehensive implementation of Daily Work Management systems tailored to your organization\'s needs.</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-balance-scale"></i>
+                            <i class="fas fa-balance-scale" aria-hidden="true"></i>
                         </div>
                         <h3>Policy Deployment (Hoshin Kanri) & Balanced Scorecard</h3>
                         <p>Strategic alignment and deployment methodologies to ensure organizational goals cascade effectively.</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-industry"></i>
+                            <i class="fas fa-industry" aria-hidden="true"></i>
                         </div>
                         <h3>Lean, TPM, TQM, Six Sigma & Quality Management Systems</h3>
                         <p>Comprehensive operational excellence methodologies for manufacturing and service industries.</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-chart-bar"></i>
+                            <i class="fas fa-chart-bar" aria-hidden="true"></i>
                         </div>
                         <h3>Business Process Improvement & Operational Excellence</h3>
                         <p>Systematic approach to identifying and eliminating waste while improving process efficiency.</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" role="article">
                         <div class="card-icon">
-                            <i class="fas fa-shield-alt"></i>
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
                         </div>
                         <h3>Environmental, Health & Safety (EHS) Systems</h3>
                         <p>Comprehensive EHS management systems to ensure workplace safety and regulatory compliance.</p>
@@ -220,16 +221,16 @@
         </section>
 
         <!-- Clients Section -->
-        <section class="clients-section">
+        <section class="clients-section" aria-labelledby="clients-heading">
             <div class="container">
                 <div class="section-title">
-                    <h2>Our Trusted Clients</h2>
+                    <h2 id="clients-heading">Our Trusted Clients</h2>
                     <p>Leading organizations across industries trust us for their transformation journey</p>
                 </div>
                 
-                <div class="clients-slider">
+                <div class="clients-slider" role="region" aria-label="Our Clients Logos">
                     <div class="clients-track" id="clients-track">
-                        <!-- Client logos will be dynamically loaded here -->
+                        <!-- Client logos will be dynamically loaded here by JavaScript -->
                     </div>
                 </div>
             </div>
@@ -237,16 +238,18 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <img src="logo-new.png" alt="Seven Steps" style="height: 60px; margin-bottom: 20px;">
+                    <a href="index.html" aria-label="Seven Steps Business Transformation Systems Home">
+                        <img src="logo-new.png" alt="Seven Steps Business Transformation Systems Logo" style="height: 60px; margin-bottom: 20px;" loading="lazy">
+                    </a>
                     <p>Making Excellence a Culture through Daily Management Systems that deliver predictable performance and continuous improvement.</p>
                     <div class="social-links" style="margin-top: 20px;">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 
@@ -272,9 +275,9 @@
                 
                 <div class="footer-section">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-phone"></i> +91 98863 18437</p>
-                    <p><i class="fas fa-envelope"></i> info@dailymanagement.in</p>
-                    <p><i class="fas fa-globe"></i> www.dailymanagement.in</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> +91 98863 18437</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@dailymanagement.in</p>
+                    <p><i class="fas fa-globe" aria-hidden="true"></i> www.dailymanagement.in</p>
                 </div>
             </div>
             
@@ -286,7 +289,7 @@
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
     <!-- JavaScript -->

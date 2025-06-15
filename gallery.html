@@ -5,164 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Seven Steps Business Transformation Systems</title>
     <meta name="description" content="View our gallery of training sessions, workshops, and client engagements at Seven Steps Business Transformation Systems.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+    <!-- Preload critical fonts for performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdgNsGaK3qQxU4y6b/bQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header" role="banner">
+        <!-- Header Top -->
         <div class="header-top">
             <div class="container">
                 <div class="contact-info">
-                    <i class="fas fa-phone"></i>
-                    <span>Call: +91 98863 18437</span>
+                    <span><i class="fas fa-phone" aria-hidden="true"></i> +91 98863 18437</span>
+                    <span><i class="fas fa-envelope" aria-hidden="true"></i> info@dailymanagement.in</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
+        
+        <!-- Header Main -->
         <div class="header-main">
             <div class="container">
-                <div class="header-content">
-                    <div class="logo">
-                        <img src="logo.png" alt="Seven Steps Business Transformation Systems">
-                    </div>
-                    <nav class="main-navigation">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li class="dropdown">
-                                <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="operational-excellence.html">Operational Excellence</a></li>
-                                    <li><a href="business-excellence.html">Business Excellence</a></li>
-                                    <li><a href="production-system.html">Production System</a></li>
-                                    <li><a href="lean-consulting.html">Lean Consulting</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="solutions.html">Solutions</a></li>
-                            <li><a href="why-seven-steps.html">Why Seven Steps</a></li>
-                            <li><a href="books.html">Books We Recommend</a></li>
-                            <li><a href="gallery.html" class="active">Gallery</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="case-studies.html">Case Studies</a></li>
-                        </ul>
-                        <div class="mobile-menu-toggle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </nav>
-                </div>
+                <a href="index.html" aria-label="Seven Steps Business Transformation Systems Home">
+                    <img src="logo-new.png" alt="Seven Steps Business Transformation Systems Logo" class="logo">
+                </a>
+                
+                <nav aria-label="Main Navigation">
+                    <ul class="nav" id="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="nav">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </nav>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="page-hero">
+    <main class="main-content" id="main-content">
+        <section class="page-hero" aria-labelledby="page-hero-heading">
             <div class="container">
-                <h1>Our Gallery</h1>
+                <h1 id="page-hero-heading">Our Gallery</h1>
                 <p>Moments of Learning, Collaboration, and Transformation</p>
             </div>
         </section>
 
-        <section class="gallery-content">
+        <section class="gallery-content section" aria-labelledby="gallery-heading">
             <div class="container">
+                <div class="section-title">
+                    <h2 id="gallery-heading">Visual Journey of Excellence</h2>
+                    <p>Explore our collection of images showcasing training sessions, workshops, and client engagements.</p>
+                </div>
                 <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="gallery-image-1.jpg" alt="Training Session 1">
-                        <div class="gallery-caption">Lean Manufacturing Workshop</div>
+                    <div class="gallery-item" role="figure">
+                        <img src="gallery-image-1.jpg" alt="Lean Manufacturing Workshop" loading="lazy">
+                        <figcaption class="gallery-caption">Lean Manufacturing Workshop</figcaption>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gallery-image-2.jpg" alt="Training Session 2">
-                        <div class="gallery-caption">Business Excellence Seminar</div>
+                    <div class="gallery-item" role="figure">
+                        <img src="gallery-image-2.jpg" alt="Business Excellence Seminar" loading="lazy">
+                        <figcaption class="gallery-caption">Business Excellence Seminar</figcaption>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gallery-image-3.jpg" alt="Training Session 3">
-                        <div class="gallery-caption">On-site Process Optimization</div>
+                    <div class="gallery-item" role="figure">
+                        <img src="gallery-image-3.jpg" alt="On-site Process Optimization" loading="lazy">
+                        <figcaption class="gallery-caption">On-site Process Optimization</figcaption>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gallery-image-4.jpg" alt="Training Session 4">
-                        <div class="gallery-caption">Team Collaboration Session</div>
+                    <div class="gallery-item" role="figure">
+                        <img src="gallery-image-4.jpg" alt="Team Collaboration Session" loading="lazy">
+                        <figcaption class="gallery-caption">Team Collaboration Session</figcaption>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gallery-image-5.jpg" alt="Training Session 5">
-                        <div class="gallery-caption">Client Engagement Meeting</div>
+                    <div class="gallery-item" role="figure">
+                        <img src="gallery-image-5.jpg" alt="Client Engagement Meeting" loading="lazy">
+                        <figcaption class="gallery-caption">Client Engagement Meeting</figcaption>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gallery-image-6.jpg" alt="Training Session 6">
-                        <div class="gallery-caption">Certification Ceremony</div>
+                    <div class="gallery-item" role="figure">
+                        <img src="gallery-image-6.jpg" alt="Certification Ceremony" loading="lazy">
+                        <figcaption class="gallery-caption">Certification Ceremony</figcaption>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta">
+        <section class="cta-section" aria-labelledby="cta-heading">
             <div class="container">
-                <div class="cta-content">
-                    <h2>Interested in Our Programs?</h2>
-                    <p>Contact us to learn more about our training and consulting services.</p>
-                    <a href="contact.html" class="btn btn-primary btn-large">Enquire Now</a>
-                </div>
+                <h2 id="cta-heading">Interested in Our Programs?</h2>
+                <p>Contact us to learn more about our training and consulting services.</p>
+                <a href="contact.html" class="cta-button">Enquire Now</a>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-main">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <div class="quote-section">
-                            <div class="aristotle-image">
-                                <img src="aristotle.png" alt="Aristotle">
-                            </div>
-                            <div class="quote-content">
-                                <blockquote>
-                                    "We Are What We Repeatedly Do. Excellence Then, Is Not An Act, But A Habit."
-                                </blockquote>
-                                <cite>Aristotle (384-322 BC)</cite>
-                                <p>Today the above quote from Aristotle is very relevant for Business Excellence journey. Less than 2 % of organizations sustain the journey after 5 years. This is mainly because of Not making excellence as a culture in the organization. Tools can be learnt but culture has to be created with focus and perseverance. Culture can be called soft part of Business Excellence.</p>
-                                <p>Strategies like TQM, Lean and Six Sigma are hard part of Business Excellence. The secret of success is a combination of soft and hard parts.</p>
-                                <p>Combining them together will make the journey not only sustainable but also enjoyable.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-section">
-                        <div class="search-section">
-                            <div class="search-box">
-                                <input type="text" placeholder="Search" id="footer-search">
-                                <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
-                            </div>
-                        </div>
-                        <div class="quick-links">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li><a href="index.html"><i class="fas fa-check"></i> Home</a></li>
-                                <li><a href="about.html"><i class="fas fa-check"></i> About Us</a></li>
-                                <li><a href="services.html"><i class="fas fa-check"></i> Services</a></li>
-                                <li><a href="blog.html"><i class="fas fa-check"></i> Blog</a></li>
-                                <li><a href="case-studies.html"><i class="fas fa-check"></i> Case Studies</a></li>
-                                <li><a href="contact.html"><i class="fas fa-check"></i> Contact</a></li>
-                            </ul>
-                        </div>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" aria-label="Seven Steps Business Transformation Systems Home">
+                        <img src="logo-new.png" alt="Seven Steps Business Transformation Systems Logo" style="height: 60px; margin-bottom: 20px;" loading="lazy">
+                    </a>
+                    <p>Making Excellence a Culture through Daily Management Systems that deliver predictable performance and continuous improvement.</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                     </div>
                 </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">DMS Implementation</a></li>
+                        <li><a href="services.html">DMS Audit & Assessment</a></li>
+                        <li><a href="services.html">Training & Certification</a></li>
+                        <li><a href="services.html">Lean Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> +91 98863 18437</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@dailymanagement.in</p>
+                    <p><i class="fas fa-globe" aria-hidden="true"></i> www.dailymanagement.in</p>
+                </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2024 Seven Steps Business Transformation Systems. All Rights Reserved.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seven Steps Business Transformation Systems. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

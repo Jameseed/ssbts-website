@@ -5,167 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solutions - Seven Steps Business Transformation Systems</title>
     <meta name="description" content="Discover the tailored solutions offered by Seven Steps Business Transformation Systems to address your unique business challenges and drive growth.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+    <!-- Preload critical fonts for performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdgNsGaK3qQxU4y6b/bQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header" role="banner">
+        <!-- Header Top -->
         <div class="header-top">
             <div class="container">
                 <div class="contact-info">
-                    <i class="fas fa-phone"></i>
-                    <span>Call: +91 98863 18437</span>
+                    <span><i class="fas fa-phone" aria-hidden="true"></i> +91 98863 18437</span>
+                    <span><i class="fas fa-envelope" aria-hidden="true"></i> info@dailymanagement.in</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
+        
+        <!-- Header Main -->
         <div class="header-main">
             <div class="container">
-                <div class="header-content">
-                    <div class="logo">
-                        <img src="logo.png" alt="Seven Steps Business Transformation Systems">
-                    </div>
-                    <nav class="main-navigation">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li class="dropdown">
-                                <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="operational-excellence.html">Operational Excellence</a></li>
-                                    <li><a href="business-excellence.html">Business Excellence</a></li>
-                                    <li><a href="production-system.html">Production System</a></li>
-                                    <li><a href="lean-consulting.html">Lean Consulting</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="solutions.html" class="active">Solutions</a></li>
-                            <li><a href="why-seven-steps.html">Why Seven Steps</a></li>
-                            <li><a href="books.html">Books We Recommend</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="case-studies.html">Case Studies</a></li>
-                        </ul>
-                        <div class="mobile-menu-toggle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </nav>
-                </div>
+                <a href="index.html" aria-label="Seven Steps Business Transformation Systems Home">
+                    <img src="logo-new.png" alt="Seven Steps Business Transformation Systems Logo" class="logo">
+                </a>
+                
+                <nav aria-label="Main Navigation">
+                    <ul class="nav" id="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="solutions.html" class="active">Solutions</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="nav">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </nav>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="page-hero">
+    <main class="main-content" id="main-content">
+        <section class="page-hero" aria-labelledby="page-hero-heading">
             <div class="container">
-                <h1>Our Solutions</h1>
+                <h1 id="page-hero-heading">Our Solutions</h1>
                 <p>Tailored Strategies for Your Business Challenges</p>
             </div>
         </section>
 
-        <section class="solutions-content">
+        <section class="solutions-content section" aria-labelledby="solutions-heading">
             <div class="container">
-                <div class="solution-item">
-                    <h2>Industry-Specific Solutions</h2>
-                    <p>We provide specialized solutions tailored to the unique challenges and opportunities within various industries, including manufacturing, healthcare, and service sectors. Our deep industry knowledge allows us to develop and implement strategies that deliver tangible results.</p>
-                    <ul>
-                        <li><strong>Manufacturing:</strong> Lean manufacturing implementation, supply chain optimization, quality control systems.</li>
-                        <li><strong>Healthcare:</strong> Lean hospital management, patient flow optimization, cost reduction strategies.</li>
-                        <li><strong>Service Sector:</strong> Process improvement, customer experience enhancement, operational efficiency.</li>
-                    </ul>
+                <div class="section-title">
+                    <h2 id="solutions-heading">Comprehensive Solutions</h2>
+                    <p>We provide specialized solutions tailored to the unique challenges and opportunities within various industries, ensuring tangible results and sustainable growth.</p>
                 </div>
-                <div class="solution-item">
-                    <h2>Customized Business Strategies</h2>
-                    <p>Beyond standard methodologies, we work closely with your leadership team to develop customized business strategies that align with your long-term goals. Our solutions are designed to be practical, implementable, and sustainable, ensuring lasting impact on your organization's performance.</p>
-                    <ul>
-                        <li>Strategic planning and deployment (Hoshin Kanri)</li>
-                        <li>Performance management systems</li>
-                        <li>Organizational development and change management</li>
-                        <li>Leadership coaching and training</li>
-                    </ul>
-                </div>
-                <div class="solution-item">
-                    <h2>Technology Integration</h2>
-                    <p>Leveraging the latest technologies, we help you integrate digital solutions into your operational processes to enhance efficiency, data visibility, and decision-making. From automation to data analytics, we guide you in adopting technologies that drive innovation and competitive advantage.</p>
-                    <ul>
-                        <li>Automation and Industry 4.0 solutions</li>
-                        <li>Data analytics and business intelligence</li>
-                        <li>Digital transformation roadmaps</li>
-                        <li>Enterprise resource planning (ERP) optimization</li>
-                    </ul>
+                <div class="cards-grid">
+                    <div class="card" role="article">
+                        <div class="card-icon">
+                            <i class="fas fa-industry" aria-hidden="true"></i>
+                        </div>
+                        <h3>Industry-Specific Solutions</h3>
+                        <p>We provide specialized solutions tailored to the unique challenges and opportunities within various industries, including manufacturing, healthcare, and service sectors. Our deep industry knowledge allows us to develop and implement strategies that deliver tangible results.</p>
+                        <ul>
+                            <li><strong>Manufacturing:</strong> Lean manufacturing implementation, supply chain optimization, quality control systems.</li>
+                            <li><strong>Healthcare:</strong> Lean hospital management, patient flow optimization, cost reduction strategies.</li>
+                            <li><strong>Service Sector:</strong> Process improvement, customer experience enhancement, operational efficiency.</li>
+                        </ul>
+                    </div>
+                    <div class="card" role="article">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                        <h3>Customized Business Strategies</h3>
+                        <p>Beyond standard methodologies, we work closely with your leadership team to develop customized business strategies that align with your long-term goals. Our solutions are designed to be practical, implementable, and sustainable, ensuring lasting impact on your organization\"s performance.</p>
+                        <ul>
+                            <li>Strategic planning and deployment (Hoshin Kanri)</li>
+                            <li>Performance management systems</li>
+                            <li>Organizational development and change management</li>
+                            <li>Leadership coaching and training</li>
+                        </ul>
+                    </div>
+                    <div class="card" role="article">
+                        <div class="card-icon">
+                            <i class="fas fa-robot" aria-hidden="true"></i>
+                        </div>
+                        <h3>Technology Integration</h3>
+                        <p>Leveraging the latest technologies, we help you integrate digital solutions into your operational processes to enhance efficiency, data visibility, and decision-making. From automation to data analytics, we guide you in adopting technologies that drive innovation and competitive advantage.</p>
+                        <ul>
+                            <li>Automation and Industry 4.0 solutions</li>
+                            <li>Data analytics and business intelligence</li>
+                            <li>Digital transformation roadmaps</li>
+                            <li>Enterprise resource planning (ERP) optimization</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta">
+        <section class="cta-section" aria-labelledby="cta-heading">
             <div class="container">
-                <div class="cta-content">
-                    <h2>Looking for a Specific Solution?</h2>
-                    <p>Let us help you find the perfect strategy to overcome your business challenges.</p>
-                    <a href="contact.html" class="btn btn-primary btn-large">Enquire Now</a>
-                </div>
+                <h2 id="cta-heading">Looking for a Specific Solution?</h2>
+                <p>Let us help you find the perfect strategy to overcome your business challenges.</p>
+                <a href="contact.html" class="cta-button">Enquire Now</a>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-main">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <div class="quote-section">
-                            <div class="aristotle-image">
-                                <img src="aristotle.png" alt="Aristotle">
-                            </div>
-                            <div class="quote-content">
-                                <blockquote>
-                                    "We Are What We Repeatedly Do. Excellence Then, Is Not An Act, But A Habit."
-                                </blockquote>
-                                <cite>Aristotle (384-322 BC)</cite>
-                                <p>Today the above quote from Aristotle is very relevant for Business Excellence journey. Less than 2 % of organizations sustain the journey after 5 years. This is mainly because of Not making excellence as a culture in the organization. Tools can be learnt but culture has to be created with focus and perseverance. Culture can be called soft part of Business Excellence.</p>
-                                <p>Strategies like TQM, Lean and Six Sigma are hard part of Business Excellence. The secret of success is a combination of soft and hard parts.</p>
-                                <p>Combining them together will make the journey not only sustainable but also enjoyable.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-section">
-                        <div class="search-section">
-                            <div class="search-box">
-                                <input type="text" placeholder="Search" id="footer-search">
-                                <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
-                            </div>
-                        </div>
-                        <div class="quick-links">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li><a href="index.html"><i class="fas fa-check"></i> Home</a></li>
-                                <li><a href="about.html"><i class="fas fa-check"></i> About Us</a></li>
-                                <li><a href="services.html"><i class="fas fa-check"></i> Services</a></li>
-                                <li><a href="blog.html"><i class="fas fa-check"></i> Blog</a></li>
-                                <li><a href="case-studies.html"><i class="fas fa-check"></i> Case Studies</a></li>
-                                <li><a href="contact.html"><i class="fas fa-check"></i> Contact</a></li>
-                            </ul>
-                        </div>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" aria-label="Seven Steps Business Transformation Systems Home">
+                        <img src="logo-new.png" alt="Seven Steps Business Transformation Systems Logo" style="height: 60px; margin-bottom: 20px;" loading="lazy">
+                    </a>
+                    <p>Making Excellence a Culture through Daily Management Systems that deliver predictable performance and continuous improvement.</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                     </div>
                 </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">DMS Implementation</a></li>
+                        <li><a href="services.html">DMS Audit & Assessment</a></li>
+                        <li><a href="services.html">Training & Certification</a></li>
+                        <li><a href="services.html">Lean Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> +91 98863 18437</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@dailymanagement.in</p>
+                    <p><i class="fas fa-globe" aria-hidden="true"></i> www.dailymanagement.in</p>
+                </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2024 Seven Steps Business Transformation Systems. All Rights Reserved.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seven Steps Business Transformation Systems. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
